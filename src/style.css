@@ -1,0 +1,134 @@
+html{
+    position: relative;
+    width: 0 auto;
+    background: rgba(97, 217, 255, 0.73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#page1{
+    display: block;
+}
+#instrucciones{
+    display: block;
+}
+#page2{
+    display: none;
+}
+#page3{
+    display: none;
+}
+.pregunta{
+   width: 124px;
+    height: 16px;
+    left: -4px;
+    top: 4px;
+
+    font-family: Dubai;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #220C77;
+}
+
+#logo{
+    width: 277px;
+    height: 186px;
+    left: 46px;
+    top: 0px;
+}
+h2{
+    width: 243px;
+    height: 75px;
+    left: 64px;
+    top: 165px;
+
+    font-family: Dubai;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    align-items: center;
+    margin: auto;
+
+    color: #220C77;
+}
+.mensaje{
+    width: 290px;
+    height: 110px;
+    left: 31px;
+    top: 210px;
+
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+.paz{
+    width: 63px;
+    height: 37px;
+    left: 192px;
+    top: 353px;
+
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+button{
+    width: 103px;
+    height: 45px;
+    left: 58px;
+    top: 406px;
+
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+b{
+    width: 127px;
+    height: 25px;
+    left: 201px;
+    top: 416px;
+
+    font-family: Dubai;
+    font-style: normal;
+    align-items: center;
+    text-align: center;
+
+    color: #220C77;
+}
+img{
+    width: 212px;
+    height: 155px;
+    left: 74px;
+    top: 474px;
+}
+p{
+    width: 309px;
+    height: 156px;
+    left: 28px;
+    top: 205px;
+
+    font-family: Rosario;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #220C77;
+}
+.respuesta{
+    width: 307px;
+    height: 130px;
+    left: 26px;
+    top: 210px;
+
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+.respuestas{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}

@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+<!--nombre en la pestaña-->
+
+<head>
+  <script src="index.js" type="module"></script>
+  <title>CELESTE</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="instrucciones">
+    <button id="funciona" class="pregunta">¿Cómo funciona?</button>
+  </div>
+  <!--imagen de logo se pone div para separar por parte el body de la pagina-->
+  <div>
+    <img id="logo" src="./Imagenes/celeste.png">
+  </div>
+  <div id="pag1">
+    <!--recuadro para ingresar el mensaje a cifrar-->
+    <h2>Escribe tu mensaje:</h2>
+    <input class="mensaje" type="text" />
+    <!--recuadro para ingresar el numero secreto-->
+    <h2>Paz:</h2>
+    <input class="paz" type="text" />
+    <!--boton para cifrar y pasar a la pagina 2-->
+    <button id="meditar" type="submit">
+      <b>MEDITAR</b>
+    </button>
+    <!--boton para decifrar y pasar a la pagina 2-->
+    <button id="noMeditar" type="submit">
+      <b>NO MEDITAR</b>
+    </button>
+    <div id="imgmedita">
+      <img src="./Imagenes/medita.png">
     </div>
-    <script src="index.js" type="module"></script>
-  </body>
+  </div>
+  <div id="pag2">
+    <h2>¿Cómo funciona?</h2>
+    <p>1.- Ingresa el mensaje que quieres cifrar.</p>
+    <p>2.- Ingresa en “Paz” el número secreto el cual permitirá desifrar el mensaje.</p>
+    <p>3.- Presiona “MEDITAR” para cifrar el mensaje.</p>
+    <p>4.- Presiona “NO MEDITAR” para desifrar el mensaje.</p>
+    <button id="volver1" type="submit">
+      <b>VOLVER</b>
+    </button>
+    <div id="imgleer">
+      <img src="./Imagenes/leer.png">
+    </div>
+  </div>
+  <div id="pag3">
+    <div class="respuestas">
+      <h2>Tu mensaje</h2>
+      <input class="respuesta" type="text" />
+      <button id="volver2" type="submit">
+        <b>VOLVER</b>
+      </button>
+    </div>
+    <div id="imgcelu">
+      <img src="./Imagenes/celu.png">
+    </div>
+  </div>
+  </script>
+</body>
+
 </html>
