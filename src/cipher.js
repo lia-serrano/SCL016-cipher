@@ -1,5 +1,7 @@
 const cipher = {
+  //encode cifra el mensaje
   encode: (text, number) => {
+    //variable que contiene el texto final cifrado
     let ciphertext = "";
 
     for (let i = 0; i < text.length; i++) {
@@ -20,17 +22,18 @@ const cipher = {
       }
       //cifra Ñ y ñ y acentos
       //else if (letra >= 160 && letra <= 165) {
-       // ciphertext = ciphertext + String.fromCharCode((letra - 160 + parseInt(number)) % 6 + 160);
+      // ciphertext = ciphertext + String.fromCharCode((letra - 160 + parseInt(number)) % 6 + 160);
       //}
 
-    }return ciphertext;
+    } return ciphertext;
   },
-      
+  //decoce decifra el mensaje
   decode: (text, number) => {
+    //variable que contiene el texto final decifrado
     let ciphertext2 = "";
 
     for (let i = 0; i < text.length; i++) {
-      
+
       let letra = text.charCodeAt(i);
       //decifra mayusculas
       if (letra >= 65 && letra <= 90) {
@@ -46,7 +49,7 @@ const cipher = {
         ciphertext2 = ciphertext2 + String.fromCharCode((letra - 32 + parseInt(number)) % 33 + 32);
       }
 
-    }return ciphertext2;
+    } return ciphertext2;
   },
 };
 
