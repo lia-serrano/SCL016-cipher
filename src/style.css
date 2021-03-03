@@ -58,7 +58,7 @@ h2{
 
     color: #220C77;
 }
-.mensaje{
+#mensaje{
     width: 290px;
     height: 110px;
     left: 31px;
@@ -67,7 +67,7 @@ h2{
     background: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
 }
-.paz{
+#paz{
     width: 63px;
     height: 37px;
     left: 192px;
@@ -118,7 +118,7 @@ p{
 
     color: #220C77;
 }
-.respuesta{
+#respuesta{
     width: 307px;
     height: 130px;
     left: 26px;

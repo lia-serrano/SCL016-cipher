@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<!--nombre en la pestaña-->
 
 <head>
   <script src="index.js" type="module"></script>
+  <!--nombre en la pestaña-->
   <title>CELESTE</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
@@ -19,26 +19,28 @@
   <div id="pag1">
     <!--recuadro para ingresar el mensaje a cifrar-->
     <h2>Escribe tu mensaje:</h2>
-    <input class="mensaje" type="text" />
+    <input id="mensaje" type="text" placeholder="Ingrese Contenido" />
     <!--recuadro para ingresar el numero secreto-->
     <h2>Paz:</h2>
-    <input class="paz" type="text" />
-    <!--boton para cifrar y pasar a la pagina 2-->
-    <button id="meditar" type="submit">
-      <b>MEDITAR</b>
-    </button>
-    <!--boton para decifrar y pasar a la pagina 2-->
-    <button id="noMeditar" type="submit">
-      <b>NO MEDITAR</b>
-    </button>
+    <input id="paz" type="number" />
+    <div>
+      <!--boton para cifrar y pasar a la pagina 2-->
+      <button id="meditar" type="submit">
+        <b>MEDITAR</b>
+      </button>
+      <!--boton para decifrar y pasar a la pagina 2-->
+      <button id="noMeditar" type="submit">
+        <b>NO MEDITAR</b>
+      </button>
+    </div>
     <div id="imgmedita">
       <img src="./Imagenes/medita.png">
     </div>
   </div>
   <div id="pag2">
     <h2>¿Cómo funciona?</h2>
-    <p>1.- Ingresa el mensaje que quieres cifrar.</p>
-    <p>2.- Ingresa en “Paz” el número secreto el cual permitirá desifrar el mensaje.</p>
+    <p>1.- Ingresa el mensaje.</p>
+    <p>2.- Selecciona en “Paz” el número secreto, el cual permitirá cifrar y desifrar el mensaje.</p>
     <p>3.- Presiona “MEDITAR” para cifrar el mensaje.</p>
     <p>4.- Presiona “NO MEDITAR” para desifrar el mensaje.</p>
     <button id="volver1" type="submit">
@@ -49,12 +51,20 @@
     </div>
   </div>
   <div id="pag3">
+    <!--Recibe mensaje cifrado-->
     <div class="respuestas">
       <h2>Tu mensaje</h2>
-      <input class="respuesta" type="text" />
-      <button id="volver2" type="submit">
-        <b>VOLVER</b>
-      </button>
+      <input id="respuesta" type="text" placeholder="Recibe Contenido" />
+      <div>
+        <!--boton para volver a la pagina principal-->
+        <button id="volver2" type="submit">
+          <b>VOLVER</b>
+        </button>
+        <!--boton para copiar el mensaje-->
+        <button onclick="copiar()" type="submit">
+          <b>COPIAR</b>
+        </button>
+      </div>
     </div>
     <div id="imgcelu">
       <img src="./Imagenes/celu.png">
