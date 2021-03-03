@@ -11,7 +11,6 @@ window.onload = function () {
 let itworks = document.querySelector(".pregunta")
 itworks.addEventListener('click', mostrar)
 function mostrar() {
-    console.log("escucho el click")
     document.querySelector('#pag1').style.display = 'none'
     document.querySelector('#pag2').style.display = 'block'
     document.querySelector('#pag3').style.display = 'none'
@@ -39,25 +38,13 @@ function mostrar1() {
     //variable para guardar el numero
     let number = document.getElementById("paz").value
     console.log(number)
-    //let get2 = document.getElementById("respuesta").value
-    //get2.value = get
-    //variable para llamar la funcion de cifrar desde cipher.js)
-    let newtext = cipher.encode(text,number)
+    //variable para llamar la funcion de cifrar desde cipher.js(texto cifrado)
+    let newtext = cipher.encode(text, number)
     console.log(newtext)
-    document.getElementById("respuesta")
-    //
-    //var get = document.getElementById("mensaje")
-    //get.addEventListener('escribir', pasarValor)
-   // function pasarValor() {
-     //   document.getElementById("mensaje").value = document.getElementById("respuesta").value;
-    }
-    //pasarValor()
-
-        //Obtener el numero de desplazamiento.
-    //Llamar funcion para cifrar.
-    //Boton meditar al hacer click debe mostrar mensaje cifrado en la sgte pag.
-    //Obtener el valor de input cifrado y mostrarlo.
-
+    //variable para mostrar texto cifrado en segunda pag.
+    let theend = document.getElementById("respuesta")
+    theend.value = newtext
+}
 let return2 = document.querySelector("#volver2")
 return2.addEventListener('click', ocultar2)
 function ocultar2() {
@@ -73,9 +60,17 @@ function mostrar3() {
     document.querySelector('#pag2').style.display = 'none'
     document.querySelector('#pag3').style.display = 'block'
     document.querySelector('#instrucciones').style.display = 'none'
+     //variable para guardar el texto
+     let text2 = document.getElementById("mensaje").value
+     console.log(text2)
+     //variable para guardar el numero
+     let number2 = document.getElementById("paz").value
+     console.log(number2)
+     //variable para llamar la funcion de decifrar desde cipher.js(texto decifrado)
+     let newtext2 = cipher.decode(text2, number2)
+     console.log(newtext2)
+     //variable para mostrar texto decifrado en segunda pag.
+     let theend2 = document.getElementById("respuesta")
+     theend2.value = newtext2
 }
-
-//let tex = document.getElementById('.respuesta');
-//function copiar (){
-
 

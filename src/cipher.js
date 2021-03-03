@@ -26,6 +26,28 @@ const cipher = {
     }return ciphertext;
   },
       
+  decode: (text, number) => {
+    let ciphertext2 = "";
+
+    for (let i = 0; i < text.length; i++) {
+      
+      let letra = text.charCodeAt(i);
+      //decifra mayusculas
+      if (letra >= 65 && letra <= 90) {
+        ciphertext2 = ciphertext2 + String.fromCharCode((letra - 65 + parseInt(number)) % 26 + 65);
+
+      }
+      // decifra minusculas
+      else if (letra >= 97 && letra <= 122) {
+        ciphertext2 = ciphertext2 + String.fromCharCode((letra - 97 + parseInt(number)) % 26 + 97);
+      }
+      // decifra numeros y simbolos
+      else if (letra >= 32 && letra <= 64) {
+        ciphertext2 = ciphertext2 + String.fromCharCode((letra - 32 + parseInt(number)) % 33 + 32);
+      }
+
+    }return ciphertext2;
+  },
 };
 
 export default cipher;
